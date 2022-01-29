@@ -12,7 +12,7 @@ Teken in op ons YouTube kanaal om toegang te kry na die preke soos hulle beskikb
 Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleutelwoorde.
 <br/>
 
-<div class="container">
+<div class="filterContainer">
   <form action="/action_page.php">
     <div class="row">
       <div class="col-25">
