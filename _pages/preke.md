@@ -20,8 +20,8 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
       </div>
       <div class="col-75">
         <select id="boek" name="boek">
-          <option value="genesis">Genesis</option>
-          <option value="eksodus">Eksodus</option>
+          <option value="Genesis">Genesis</option>
+          <option value="Eksodus">Eksodus</option>
         </select>
       </div>
     </div>
