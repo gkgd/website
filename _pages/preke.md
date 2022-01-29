@@ -107,7 +107,7 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
   <div class="grid-item">
       <div class="card"> 
         <div class="card_container">
-          <h4><b>{{ item.title }}</b></h4> 
+          <b>{{ item.title }}</b>
           <p>{{ item.description }}</p> 
           <a type="button" id="download-url" class="btn btn-primary btn-block" href="https://cdn-142.anonfiles.com/f5v9w2E9xf/43f42d35-1643445953/20220130-final.mp4">                    <img src="/img/file/filetypes/mime/video_unknown.png?1597404212"> Download
                     (708.72 MB)</a>
