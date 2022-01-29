@@ -22,6 +22,22 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
         <select id="boek" name="boek">
           <option value="Genesis">Genesis</option>
           <option value="Eksodus">Eksodus</option>
+          <option value="Levitikus">Levitikus</option>
+          <option value="Numeri">Numeri</option>
+          <option value="Deuteronomium">Deuteronomium</option>
+          <option value="Josua">Josua</option>
+          <option value="Rigters">Rigters</option>
+          <option value="Rut">Rut</option>
+          <option value="1 Samuel">1 Samuel</option>
+          <option value="2 Samuel">2 Samuel</option>
+          <option value="1 Konings">1 Konings</option>
+          <option value="2 Konings">2 Konings</option>
+          <option value="1 Kronieke">1 Kronieke</option>
+          <option value="2 Kronieke">2 Kronieke</option>
+          <option value="Esra">Esra</option>
+          <option value="Nehemia">Nehemia</option>
+          <option value="Ester">Ester</option>
+          <option value="Job">Job</option>
         </select>
       </div>
     </div>
