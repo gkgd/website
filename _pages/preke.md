@@ -63,6 +63,29 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
           <option value="Markus">Markus</option>
           <option value="Lukas">Lukas</option>
           <option value="Johannes">Johannes</option>
+          <option value="Die handelinge van die apostels">Die handelinge van die apostels</option>
+          <option value="Romeine">Romeine</option>
+          <option value="1 Korintiërs ">1 Korintiërs </option>
+          <option value="2 Korintiërs">2 Korintiërs</option>
+          <option value="Galasiërs">Galasiërs</option>
+          <option value="Effesiërs">Effesiërs</option>
+          <option value="Filippense">Filippense</option>
+          <option value="Kolossense">Kolossense</option>
+          <option value="1 Tessalonisense">1 Tessalonisense</option>
+          <option value="2 Tessalonisense">2 Tessalonisense</option>
+          <option value="1 Timoteus">1 Timoteus</option>
+          <option value="2 Timoteus">2 Timoteus</option>
+          <option value="Titus ">Titus </option>
+          <option value="Filemon">Filemon</option>
+          <option value="Hebreërs">Hebreërs</option>
+          <option value="Jakobus">Jakobus</option>
+          <option value="1 Petrus">1 Petrus</option>
+          <option value="2 Petrus">2 Petrus</option>
+          <option value="1 Johannes">1 Johannes</option>
+          <option value="2 Johannes">2 Johannes</option>
+          <option value="3 Johannes">3 Johannes</option>
+          <option value="Judas">Judas</option>
+          <option value="Die openbaring">Die openbaring</option>
         </select>
       </div>
     </div>
