@@ -16,26 +16,10 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
   <form action="/action_page.php">
     <div class="row">
       <div class="col-25">
-        <label for="fname">First Name</label>
+        <label for="boek">Skrifgedeelte</label>
       </div>
       <div class="col-75">
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="lname">Last Name</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="country">Country</label>
-      </div>
-      <div class="col-75">
-        <select id="country" name="country">
+        <select id="boek" name="boek">
           <option value="australia">Australia</option>
           <option value="canada">Canada</option>
           <option value="usa">USA</option>
@@ -44,14 +28,11 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="subject">Subject</label>
+        <label for="keywords">Sleutelwoorde</label>
       </div>
       <div class="col-75">
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <input type="text" id="keywords" name="keywords" placeholder="Soek vir sleatelwoorde hier...">
       </div>
-    </div>
-    <div class="row">
-      <input type="submit" value="Submit">
     </div>
   </form>
 </div>
