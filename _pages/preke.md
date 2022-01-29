@@ -38,6 +38,31 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
           <option value="Nehemia">Nehemia</option>
           <option value="Ester">Ester</option>
           <option value="Job">Job</option>
+          <option value="Psalms">Psalms</option>
+          <option value="Spreuke van Salomo">Spreuke van Salomo</option>
+          <option value="Prediker">Prediker</option>
+          <option value="Hooglied van Salomo">Hooglied van Salomo</option>
+          <option value="Jesaja">Jesaja</option>
+          <option value="Jeremia">Jeremia</option>
+          <option value="Klaagliedere van Jeremia">Klaagliedere van Jeremia</option>
+          <option value="Esegiël">Esegiël</option>
+          <option value="Daniël">Daniël</option>
+          <option value="Hosea">Hosea</option>
+          <option value="Joël">Joël</option>
+          <option value="Amos">Amos</option>
+          <option value="Obadja">Obadja</option>
+          <option value="Jona">Jona</option>
+          <option value="Miga">Miga</option>
+          <option value="Nahum">Nahum</option>
+          <option value="Habakuk">Habakuk</option>
+          <option value="Sefanja">Sefanja</option>
+          <option value="Haggai">Haggai</option>
+          <option value="Sagaria">Sagaria</option>
+          <option value="Maleagi">Maleagi</option>
+          <option value="Matteus">Matteus</option>
+          <option value="Markus">Markus</option>
+          <option value="Lukas">Lukas</option>
+          <option value="Johannes">Johannes</option>
         </select>
       </div>
     </div>
