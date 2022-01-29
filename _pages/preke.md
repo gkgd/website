@@ -20,6 +20,7 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
       </div>
       <div class="col-75">
         <select id="boek" name="boek">
+          <option value="blank"></option>
           <option value="Genesis">Genesis</option>
           <option value="Eksodus">Eksodus</option>
           <option value="Levitikus">Levitikus</option>
@@ -88,7 +89,7 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
           <option value="Die openbaring">Die openbaring</option>
         </select>
       </div>
-    </div>
+    </div> 
     <div class="row">
       <div class="col-25">
         <label for="keywords">Sleutelwoorde</label>
@@ -99,70 +100,5 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
     </div>
   </form>
 </div>
-
-<div class="row">
-  <div class="col-md-6 mb-5">
-    <h2>2022</h2>
-    <hr />
-    <div>
-      <div style="position:relative;padding-top:56.25%;">
-        <iframe src="//www.youtube.com/embed/videoseries?list=PL3rAB5-SazVcI0T2OA1HzYuVMhvkMGrZi&wmode=opaque" frameborder="0" allowfullscreen
-          style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-      </div>
-    </div>   
-  </div> 
-  <div class="col-md-6 mb-5">
-    <h2>2021</h2>
-    <hr />
-    <div>
-      <div style="position:relative;padding-top:56.25%;">
-        <iframe src="//www.youtube.com/embed/videoseries?list=PL3rAB5-SazVfuzVCDkDKmJ6kkAPVl_f2X&wmode=opaque" frameborder="0" allowfullscreen
-          style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-      </div>
-    </div>    
-  </div> 
-</div> 
-<div class="row">
-  <div class="col-md-6 mb-5">
-    <h2>2020</h2>
-    <hr />
-    <div>
-      <div style="position:relative;padding-top:56.25%;">
-        <iframe src="//www.youtube.com/embed/videoseries?list=PL3rAB5-SazVdslcYX0Pya5uGGddGbDwoT&wmode=opaque" frameborder="0" allowfullscreen
-          style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-      </div>
-    </div>   
-  </div> 
-  <div class="col-md-6 mb-5">
-    <h2>2019</h2>
-    <hr />
-    <div>
-      <div style="position:relative;padding-top:56.25%;">
-        <iframe src="//www.youtube.com/embed/videoseries?list=PL3rAB5-SazVcxPrk4d6_sKsf-6PBJlWKG&wmode=opaque" frameborder="0" allowfullscreen
-          style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-      </div>
-    </div> 
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-6 mb-5">
-    <h2>2018</h2>
-    <hr />
-    <div>
-      <div style="position:relative;padding-top:56.25%;">
-        <iframe src="//www.youtube.com/embed/videoseries?list=PL3rAB5-SazVd5iFN46gvGyKt2Emfd7e6s&wmode=opaque" frameborder="0" allowfullscreen
-          style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-      </div>
-    </div>   
-  </div> 
-  <div class="col-md-6 mb-5">
-    <h2></h2>
-    <hr/>
-    <div>
-      <div style="position:relative;padding-top:56.25%;">
-        
-      </div>
-    </div> 
-  </div>
-</div>
-
+<br/>
+### Soekresultate
