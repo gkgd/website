@@ -102,3 +102,9 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
 </div>
 <br/>
 ### Soekresultate
+{% for page in site.pages %}
+  {% if page.layout == 'preek' %}  
+    <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+    <p>{{ page.title }}</p>
+  {% endif %}
+{% endfor %}
