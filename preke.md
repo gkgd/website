@@ -9,9 +9,17 @@ permalink: /preke/
     });
     
     function onSearch(sender){
+      
       var selBoek = document.getElementById("boek");
       var inpText = document.getElementById("keywords");
-      search.search("" + selBoek.value + " " + inpText.value);
+      var searchString = selBoek.value;
+      if(inpText.value === "blank"){
+        searchString += " ";
+      }else{
+        searchString += " " + inpText.value;
+      }
+    
+      search.search(searchString);
     };
     
 </script>  
