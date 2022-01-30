@@ -16,12 +16,11 @@
       
       const startTime = new Date().getTime();
 
-      var request = new XMLHttpRequest();
-      
-      request.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-      request.setRequestHeader('Access-Control-Allow-Origin', '*');
+      var request = new XMLHttpRequest(); 
       request.responseType = "blob";
       request.open("get", uri, true);
+      request.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+      request.setRequestHeader('Access-Control-Allow-Origin', '*');
       request.send();
 
       request.onreadystatechange = function(){
