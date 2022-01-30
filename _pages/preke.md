@@ -109,7 +109,7 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
         <div class="card_container">
           <b>{{ item.title }}</b>
           <p>{{ item.description }}</p> 
-          <a type="button" class="btn btn-primary btn-block" href="#" onclick="downloadFile('https://cdn-142.anonfiles.com/f5v9w2E9xf/43f42d35-1643445953/20220130-final.mp4')">Download</a>
+          <a type="button" class="btn btn-primary btn-block" href="https://cdn-142.anonfiles.com/f5v9w2E9xf/43f42d35-1643445953/20220130-final.mp4" download>Download</a>
         </div>
       </div>
     </div>
