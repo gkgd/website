@@ -3,7 +3,7 @@ layout: main
 permalink: /preke/
 ---
 <script>    
-    var onSearch = function(sender){
+    function onSearch(sender){
       alert("search");
     };
 </script>  
