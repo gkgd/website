@@ -36,6 +36,15 @@
   <script src="{{ site.baseurl }}/assets/vendor/jquery/jquery.min.js"></script>
   <script src="{{ site.baseurl }}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+  <!-- Configuration -->
+  <script>
+    SimpleJekyllSearch({
+      searchInput: document.getElementById('keywords'),
+      resultsContainer: document.getElementById('results'),
+      json: '/search.json',
+      searchResultTemplate: '<div class="grid-item"><div class="card"><div class="card_container"><b>{title}</b><p>{description}</p><a type="button" class="btn btn-primary btn-block" onclick="downloadFile(\'https://preke.blob.core.windows.net/2022/20220123-final.mp4\')" href="#">Download</a></div></div></div>'
+    })
+  </script>
 </body>
 
 </html>
