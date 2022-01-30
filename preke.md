@@ -12,13 +12,10 @@ permalink: /preke/
       
       var selBoek = document.getElementById("boek");
       var inpText = document.getElementById("keywords");
-      var searchString = selBoek.value;
-      if(inpText.value === "blank"){
-        searchString += " ";
-      }else{
-        searchString += " " + inpText.value;
+      var searchString = " " + inpText.value;
+      if(selBoek.value !== "blank"){
+        searchString += " " + selBoek.value
       }
-    
       search.search(searchString);
     };
     
