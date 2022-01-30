@@ -42,7 +42,7 @@
       searchInput: document.getElementById('keywords'),
       resultsContainer: document.getElementById('results'),
       json: '../search.json', 
-      searchResultTemplate: '<div class="grid-item"> <div class="card"> <div class="card_container"> <p>{{ date | date_to_string }}</p><b>{title}</b> <p>{content}</p><a type="button" class="btn btn-primary btn-block" onclick="downloadFile(\'https://preke.blob.core.windows.net/2022/20220123-final.mp4\')" href="#">Download</a> </div></div></div>'
+      searchResultTemplate: '<div class="grid-item"> <div class="card"> <div class="card_container"> <p>{date_live}</p><b>{title}</b> <p>{content}</p><a type="button" class="btn btn-primary btn-block" onclick="downloadFile(\'https://preke.blob.core.windows.net/2022/20220123-final.mp4\')" href="#">Download</a> </div></div></div>'
     });  
   </script>
 </body>
