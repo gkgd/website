@@ -13,7 +13,10 @@
   <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet" />
   <script>
     var downloadFile = function(url){
-      alert("Yes!!!");
+      var link=document.createElement('a');
+      link.href = url;
+      link.download = filePath.substr(url);
+      link.click();
     }
   </script>
 </head>
