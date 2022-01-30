@@ -17,7 +17,9 @@
       const startTime = new Date().getTime();
 
       var request = new XMLHttpRequest();
-
+      
+      request.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+      request.setRequestHeader('Access-Control-Allow-Origin', '*');
       request.responseType = "blob";
       request.open("get", uri, true);
       request.send();
