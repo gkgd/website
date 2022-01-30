@@ -121,4 +121,5 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
 <br/>
 ### Soekresultate
 <div id="results" class="grid-container">
+    <div><span class="badge badge-pill badge-primary">Primary</span><span class="badge badge-pill badge-primary">Primary</span></div>
 </div> 
