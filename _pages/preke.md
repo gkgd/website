@@ -8,7 +8,7 @@ permalink: /preke/
 SimpleJekyllSearch({
   searchInput: document.getElementById('keywords'),
   resultsContainer: document.getElementById('results'),
-  json: '../search.json',
+  json: 'search.json',
   searchResultTemplate: '<div class="grid-item"><div class="card"><div class="card_container"><b>{title}</b><p>{description}</p><a type="button" class="btn btn-primary btn-block" onclick="downloadFile(\'https://preke.blob.core.windows.net/2022/20220123-final.mp4\')" href="#">Download</a></div></div></div>'
 })
 </script>
