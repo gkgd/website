@@ -109,7 +109,7 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
         <div class="card_container">
           <b>{{ item.title }}</b>
           <p>{{ item.description }}</p> 
-          <a type="button" class="btn btn-primary btn-block" onclick="downloadFile('https://preke.blob.core.windows.net/2022/20220123-final.mp4')" href="#">Download</a>
+          <a type="button" class="btn btn-primary btn-block" onclick="downloadFile('https://crossorigin.me/https://preke.blob.core.windows.net/2022/20220123-final.mp4')" href="#">Download</a>
         </div>
       </div>
     </div>
