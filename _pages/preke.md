@@ -115,5 +115,5 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
 </div>
 <br/>
 ### Soekresultate
-<div class="grid-container">
+<div id="grid-container">
 </div> 
