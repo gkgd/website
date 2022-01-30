@@ -14,40 +14,5 @@
   
   <!-- Script pointing to search-script.js -->
   <script src="../../js/search.js" type="text/javascript"></script>
-  
-  <script>
-    var downloadFile = function(uri){ 
-      
-      const startTime = new Date().getTime();
-
-      var request = new XMLHttpRequest(); 
-      request.responseType = "blob";
-      request.open("get", uri, true);
-      request.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-      request.setRequestHeader('Access-Control-Allow-Origin', '*'); 
-      request.send();
-
-      request.onreadystatechange = function(){
-        if(this.readyState == 4 && this.status == 200){
-              const url = window.URL.createObjectURL(this.response);
-              const anchor = document.createElement("a");
-              anchor.href = url;
-              anchor.download = "filename.mp4";
-              document.body.appendChild(anchor);
-              anchor.click();
-          }
-      };
-
-      request.onprogress = function(e){
-          const precent_complete = Math.floor((e.loaded / e.total) * 100);
-          const duration = (new Date().getTime() - startTime) / 100;
-          const bps = e.loaded / duration;
-          const kbps = Math.floor(bps / 1024);
-          const time = (e.total - e.loaded) / bps;
-          const seconds = Math.floor(time % 60);
-          const minutes = Math.floor(time / 60);
-          console.log(`${precent_complete}% - ${kbps} Kbps - ${minutes} min ${seconds} sec remaining`);
-      };
-    }
-  </script>
+ 
 </head>
