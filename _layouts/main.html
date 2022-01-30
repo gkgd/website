@@ -42,7 +42,7 @@
       searchInput: document.getElementById('keywords'),
       resultsContainer: document.getElementById('results'),
       json: '../search.json', 
-      searchResultTemplate: '<div class="grid-item"> <div class="card"> <div class="card_container"><p>{date}</p><b>{title}</b> <p>{content}</p><a type="button" class="btn btn-primary btn-block" onclick="downloadFile(\'{youtube}\')" href="#">Download</a> </div></div></div>'
+      searchResultTemplate: '<div class="grid-item"> <div class="card"> <div class="card_container"><p>{date}</p><b>{title}</b> <p>{content}</p><a type="button" class="btn btn-primary btn-block" href="{youtube}">Download</a> </div></div></div>'
     });  
   </script>
 </body>
