@@ -1,6 +1,6 @@
 ---
 layout: main
-tags: "Ester Job"
+tags: ester job
 permalink: /preke/
 ---
 <script>    
