@@ -1,13 +1,12 @@
 ---
 layout: main
-tags: ester job
 permalink: /preke/
 ---
 <script>    
     function onSearch(sender){
       var selBoek = document.getElementById("boek");
       var inpText = document.getElementById("keywords");
-      //search.search("" + selBoek.value + " " + inpText.value);
+      search.search("" + selBoek.value + " " + inpText.value);
     };
 </script>  
 
