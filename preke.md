@@ -2,12 +2,18 @@
 layout: main
 permalink: /preke/
 ---
-<script>    
+<script>
+    
+    window.addEventListener('load', (event) => {
+      search.search(" ");
+    });
+    
     function onSearch(sender){
       var selBoek = document.getElementById("boek");
       var inpText = document.getElementById("keywords");
       search.search("" + selBoek.value + " " + inpText.value);
     };
+    
 </script>  
 
 ## Ons YouTube Kanaal
