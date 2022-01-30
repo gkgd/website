@@ -38,17 +38,25 @@
   <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
   <!-- Configuration -->
   <script>
-    SimpleJekyllSearch({
+    var search = SimpleJekyllSearch({
       searchInput: document.getElementById('keywords'),
       resultsContainer: document.getElementById('results'),
       json: '../search.json',
-      templateMiddleware: function(prop, value, template) {
-        if (prop === 'bar') {
-          return value.replace(/^\//, '')
-        }
-      },
       searchResultTemplate: '<div class="grid-item"><div class="card"><div class="card_container"><b>{title}</b><p>{content}</p><a type="button" class="btn btn-primary btn-block" onclick="downloadFile(\'https://preke.blob.core.windows.net/2022/20220123-final.mp4\')" href="#">Download</a></div></div></div>'
-    })
+    });
+    
+    var onSelect = function(){
+      alert("Select");
+    };
+    
+    var onChange = function(){
+      alert("Change");
+    };
+    
+    document.addEventListener('DOMContentLoaded', function() {
+       console.log('document is ready. I can sleep now');
+    });
+    
   </script>
 </body>
 
