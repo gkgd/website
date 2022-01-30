@@ -42,6 +42,11 @@
       searchInput: document.getElementById('keywords'),
       resultsContainer: document.getElementById('results'),
       json: '../search.json',
+      templateMiddleware: function(prop, value, template) {
+        if (prop === 'bar') {
+          return value.replace(/^\//, '')
+        }
+      }
       searchResultTemplate: '<div class="grid-item"><div class="card"><div class="card_container"><b>{title}</b><p>{content}</p><a type="button" class="btn btn-primary btn-block" onclick="downloadFile(\'https://preke.blob.core.windows.net/2022/20220123-final.mp4\')" href="#">Download</a></div></div></div>'
     })
   </script>
