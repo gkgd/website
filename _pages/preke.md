@@ -3,9 +3,6 @@ layout: main
 permalink: /preke/
 ---
 
-<!-- Script pointing to search-script.js -->
-<script src="../../js/search.js" type="text/javascript"></script>
-
 <!-- Configuration -->
 <script>
 SimpleJekyllSearch({
