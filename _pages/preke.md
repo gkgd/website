@@ -3,6 +3,19 @@ layout: main
 permalink: /preke/
 ---
 
+<!-- Script pointing to search-script.js -->
+<script src="../../js/search.js" type="text/javascript"></script>
+
+<!-- Configuration -->
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('grid-container'),
+  json: '../../search.json',
+  searchResultTemplate: '<div class="grid-item"><div class="card"><div class="card_container"><b>{title}</b><p>{description}</p><a type="button" class="btn btn-primary btn-block" onclick="downloadFile('https://preke.blob.core.windows.net/2022/20220123-final.mp4')" href="#">Download</a></div></div></div>'
+})
+</script>
+
 ## Ons YouTube Kanaal
 Teken in op ons YouTube kanaal om toegang te kry na die preke soos hulle beskikbaar gestel word: 
 <div class="g-ytsubscribe" data-channelid="UC0ZP4XfiYIW-CgGgnnmV-2Q" data-layout="default" data-count="hidden"></div>
@@ -103,15 +116,4 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
 <br/>
 ### Soekresultate
 <div class="grid-container">
-{% for item in site.data.preke %} 
-  <div class="grid-item">
-      <div class="card"> 
-        <div class="card_container">
-          <b>{{ item.title }}</b>
-          <p>{{ item.description }}</p> 
-          <a type="button" class="btn btn-primary btn-block" onclick="downloadFile('https://preke.blob.core.windows.net/2022/20220123-final.mp4')" href="#">Download</a>
-        </div>
-      </div>
-    </div>
-{% endfor %}
 </div> 
