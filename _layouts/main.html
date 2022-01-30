@@ -21,7 +21,12 @@
 } 
 
 </style>
-  
+
+<script>
+  openYoutube = function(url){
+    console.log(url);
+  }
+</script>
 <body>
   {% include navigation.html %}
   <!-- Page Content -->
@@ -42,7 +47,7 @@
       searchInput: document.getElementById('keywords'),
       resultsContainer: document.getElementById('results'),
       json: '../search.json', 
-      searchResultTemplate: '<div class="grid-item"> <div class="card"> <div class="card_container"><p>{date}</p><b>{title}</b> <p>{content}</p><a type="button" class="btn btn-primary btn-block" href=\'{youtube}\' target="_blank" rel="noopener noreferrer">Download</a> </div></div></div>'
+      searchResultTemplate: '<div class="grid-item"> <div class="card"> <div class="card_container"><p>{date}</p><b>{title}</b> <p>{content}</p><a type="button" class="btn btn-primary btn-block" onclick="openYoutube({youtube})" href="#" target="_blank" rel="noopener noreferrer">Download</a> </div></div></div>'
     });  
   </script>
 </body>
