@@ -2,6 +2,17 @@
 layout: main
 permalink: /preke/
 ---
+<script>  
+    const selBoek = document.getElementById('boek');
+    const inpText = document.getElementById('keywords');
+    
+    selBoek.addEventListener('change', onSearch);
+    inpText.addEventListener('change', onSearch);
+    
+    var onSearch = function(sender){
+      alert("search");
+    };
+</script>  
 
 ## Ons YouTube Kanaal
 Teken in op ons YouTube kanaal om toegang te kry na die preke soos hulle beskikbaar gestel word: 
