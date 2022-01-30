@@ -2,13 +2,7 @@
 layout: main
 permalink: /preke/
 ---
-<script>  
-    const selBoek = document.getElementById('boek');
-    const inpText = document.getElementById('keywords');
-    
-    selBoek.addEventListener('change', onSearch);
-    inpText.addEventListener('change', onSearch);
-    
+<script>    
     var onSearch = function(sender){
       alert("search");
     };
@@ -30,7 +24,7 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
         <label for="boek">Skrifgedeelte</label>
       </div>
       <div class="col-75">
-        <select id="boek" name="boek">
+        <select id="boek" name="boek" onchange="onSearch()">
           <option value="blank"></option>
           <option value="Genesis">Genesis</option>
           <option value="Eksodus">Eksodus</option>
