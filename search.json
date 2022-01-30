@@ -8,7 +8,8 @@
       "tags"     : "{{ post.tags | join: ', ' }}",
       "url"      : "{{ site.baseurl }}{{ post.url }}",
       "date"     : "{{ post.date | date: '%Y-%m-%d' }}",
-      "content"  : "{{ post.content | strip_html | strip_newlines  }}"
+      "content"  : "{{ post.content | strip_html | strip_newlines  }}",
+      "youtube"  : "{{ post.youtube }}"
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
