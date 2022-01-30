@@ -20,8 +20,7 @@
       request.responseType = "blob";
       request.open("get", uri, true);
       request.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-      request.setRequestHeader('Access-Control-Allow-Origin', '*');
-      request.setRequestHeader('Host', 'gkgd.github.io');
+      request.setRequestHeader('Access-Control-Allow-Origin', '*'); 
       request.send();
 
       request.onreadystatechange = function(){
