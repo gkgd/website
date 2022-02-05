@@ -13,6 +13,8 @@ permalink: /preke/
         searchString += " " + selBoek.value
       }
       search.search(searchString);
+      var inputField = document.getElementById('keywords');
+      if(inputField.value === "") inputField.value = " ";
     };
     
 </script>  
