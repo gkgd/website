@@ -3,11 +3,7 @@ layout: main
 permalink: /preke/
 ---
 <script> 
-    
-    $('#results').bind('DOMSubtreeModified', function () {
-        console.log('changed');
-    });
-   
+     
     function onSearch(sender){
       
       var selBoek = document.getElementById("boek");
