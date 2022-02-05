@@ -21,6 +21,7 @@ permalink: /preke/
     
     function contentChanged() { 
         totalResults = document.getElementById('results').children.length;
+        document.getElementById('results').html("Soekresultate(" + totalResults + ")");
     }
     
     function onSearch(sender){
@@ -136,5 +137,5 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
   </form>
 </div>
 <br/>
-### Soekresultate 
+<h3 id="resultsHeader">Soekresultate(0)</h3>
 <div id="results" class="grid-container"/>
