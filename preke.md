@@ -4,12 +4,12 @@ permalink: /preke/
 ---
 <script> 
     
-    debugger;
-    
-    $('keywords').bind('DOMSubtreeModified', function () {
-      console.log('changed');
-    });    
-    
+    $( document ).ready(function() {
+        $('keywords').bind('DOMSubtreeModified', function () {
+          console.log('changed');
+        });  
+    });
+   
     function onSearch(sender){
       
       var selBoek = document.getElementById("boek");
