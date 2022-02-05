@@ -76,6 +76,7 @@
       success: function(){
         setTimeout(() => { this.search(" "); }, 500);
       },
+      limit: 1000,
       searchResultTemplate: '<div class="grid-item"> <div class="card"> <div class="card_container"><h6>{date}  {tags}</h6><b>{title}</b> <p>{content}</p>{youtube}</div></div></div>'
     });  
   </script>
