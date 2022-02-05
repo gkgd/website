@@ -25,6 +25,10 @@ permalink: /preke/
         if(header) header.innerHTML = "Soekresultate(" + totalResults + ")";
     }
     
+    function clear(){
+        document.getElementById('keywords').value = " ";
+        document.getElementById('boek').value = "blank";
+    }
     function onSearch(sender){
       
       var selBoek = document.getElementById("boek");
@@ -50,7 +54,7 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
 <br/>
 
 <div class="filterContainer">
-  <form action="/action_page.php">
+  <form action="#">
     <div class="row">
       <div class="col-25">
         <label for="boek">Skrifgedeelte</label>
@@ -126,6 +130,7 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
           <option value="Die openbaring">Die openbaring</option>
         </select>
       </div>
+      <button type="button" class="btn btn-primary" onclick="clear();">Soek weer</button>
     </div> 
     <div class="row">
       <div class="col-25">
