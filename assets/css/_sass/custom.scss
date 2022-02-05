@@ -95,6 +95,15 @@ input[type=submit]:hover {
   border-top-color: #b31217 !important;
 }
 
+.youtube-button-disabled {
+  background-color: #f8f9fa !important;
+  border-bottom-color: #f8f9fa !important;
+  border-left-color: #f8f9fa !important;
+  border-right-color: #f8f9fa !important;
+  border-top-color: #f8f9fa !important;
+  color: #6c757d !important;
+}
+
 .row {
   margin-left: 0px;
   margin-right: 0px;
