@@ -39,8 +39,8 @@ permalink: /preke/
       var inpText = document.getElementById("keywords");
       var searchString = inpText.value;
       if(selBoek.value !== "blank"){
-        if(searchString === ""){
-            searchString += selBoek.value
+        if(searchString === "" || searchString === " "){
+            searchString = selBoek.value
         }else{
             searchString += " " + selBoek.value
         }
