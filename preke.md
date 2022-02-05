@@ -11,6 +11,7 @@ permalink: /preke/
      
     function onSearch(sender){
       
+      totalResults = 0;
       var selBoek = document.getElementById("boek");
       var inpText = document.getElementById("keywords");
       var searchString = inpText.value;
