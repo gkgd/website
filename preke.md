@@ -6,9 +6,24 @@ permalink: /preke/
     
     $(function(){
      document.getElementById("keywords").value = " ";
+   
+     var myElement = document.getElementById('results');
+     if(window.addEventListener) {
+        // Normal browsers
+        myElement.addEventListener('DOMSubtreeModified', contentChanged, false);
+     } else if(window.attachEvent) {
+        // IE
+        myElement.attachEvent('DOMSubtreeModified', contentChanged);
+     }
      onSearch();
+    
     });
-     
+    
+    function contentChanged() {
+       // this function will run each time the content of the DIV changes
+        alert("changed");
+    }
+    
     function onSearch(sender){
       
       totalResults = 0;
