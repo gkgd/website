@@ -52,6 +52,11 @@
           return tagElements;
         }
       },
+      sortMiddleware: function(a, b) {
+        var aDate = new Date(a.date);
+        var bDate = new Date(b.date);
+        return aDate > bDate;
+      }
       noResultsText: "Geen preke is gevind nie",
       success: function(){
         setTimeout(() => { this.search(" "); }, 500);
