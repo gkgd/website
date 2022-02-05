@@ -4,6 +4,8 @@ permalink: /preke/
 ---
 <script> 
     
+    debugger;
+    
     $('keywords').bind('DOMSubtreeModified', function () {
       console.log('changed');
     });    
