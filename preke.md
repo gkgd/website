@@ -4,7 +4,7 @@ permalink: /preke/
 ---
 <script>
     
-    window.onload = function(event){
+    window.DOMContentLoaded = function(event){
       search.search(" ");
     };
     
