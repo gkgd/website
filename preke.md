@@ -21,7 +21,7 @@ permalink: /preke/
     
     function contentChanged() { 
         totalResults = document.getElementById('results').children.length;
-        document.getElementById('resultsHeader').html("Soekresultate(" + totalResults + ")");
+        document.getElementById('resultsHeader').innerHTML("Soekresultate(" + totalResults + ")");
     }
     
     function onSearch(sender){
