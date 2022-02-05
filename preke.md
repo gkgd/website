@@ -11,6 +11,8 @@ permalink: /preke/
      document.getElementById("clear").addEventListener("click", function(){
         document.getElementById('keywords').value = " ";
         document.getElementById('boek').value = "blank";
+        document.getElementById('keywords').focus();
+        onSearch();
      });
     
      var myElement = document.getElementById('results');
