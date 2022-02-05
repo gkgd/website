@@ -46,8 +46,8 @@ permalink: /preke/
         }
       }
       search.search(searchString);
-      /*var inputField = document.getElementById('keywords');
-      if(inputField.value === "") inputField.value = " ";*/
+      var inputField = document.getElementById('keywords');
+      if(inputField.value === "") inputField.value = " ";
     };
     
 </script>  
