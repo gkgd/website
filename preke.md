@@ -2,11 +2,11 @@
 layout: main
 permalink: /preke/
 ---
-<script>
+<script> 
     
-    window.addEventListener('DOMContentLoaded', (event) => {
+    document.addEventListener('DOMContentLoaded', (event) => {
         console.log('DOM fully loaded and parsed');
-    });
+    })      
     
     function onSearch(sender){
       
