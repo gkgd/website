@@ -5,7 +5,7 @@ permalink: /preke/
 <script> 
     
     $(function() {
-        $('keywords').bind('DOMSubtreeModified', function () {
+        $('#keywords').bind('DOMSubtreeModified', function () {
           console.log('changed');
         });
     }); 
