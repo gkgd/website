@@ -130,8 +130,7 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
           <option value="Judas">Judas</option>
           <option value="Die openbaring">Die openbaring</option>
         </select>
-      </div> 
-      <div><button type="button" class="btn btn-primary" onclick="clear();">Soek weer</button></div>
+      </div>  
     </div> 
     <div class="row">
       <div class="col-25">
@@ -146,7 +145,7 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
         &nbsp;
       </div>
       <div class="col-75">
-        <input type="text" id="keywords" name="keywords" placeholder="Soek vir sleatelwoorde hier..." oninput="onSearch()">
+        <button type="button" class="btn btn-primary" onclick="clear();">Soek weer</button>
       </div>
     </div>
   </form>
