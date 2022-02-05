@@ -19,14 +19,12 @@ permalink: /preke/
     
     });
     
-    function contentChanged() {
-       // this function will run each time the content of the DIV changes
-        alert("changed");
+    function contentChanged() { 
+        totalResults = document.getElementById('results').children;
     }
     
     function onSearch(sender){
       
-      totalResults = 0;
       var selBoek = document.getElementById("boek");
       var inpText = document.getElementById("keywords");
       var searchString = inpText.value;
