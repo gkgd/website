@@ -7,7 +7,12 @@ permalink: /preke/
     $(function(){
     
      document.getElementById("keywords").value = " "; 
-   
+     
+     document.getElementById("clear").addEventListener("click", function(){
+        document.getElementById('keywords').value = " ";
+        document.getElementById('boek').value = "blank";
+     });
+    
      var myElement = document.getElementById('results');
      if(window.addEventListener) {
         // Normal browsers
@@ -18,12 +23,7 @@ permalink: /preke/
      }
      onSearch();
     
-    });
-    
-    function clear(){
-        document.getElementById('keywords').value = " ";
-        document.getElementById('boek').value = "blank";
-    }
+    }); 
     
     function contentChanged() { 
         totalResults = document.getElementById('results').children.length;
@@ -146,7 +146,7 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
         &nbsp;
       </div>
       <div class="col-75">
-        <button id="clear" type="button" class="btn btn-primary onclick='clear();'">Soek weer</button>
+        <button id="clear" type="button" class="btn btn-primary">Soek weer</button>
       </div>
     </div>
   </form>
