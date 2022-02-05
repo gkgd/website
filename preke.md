@@ -4,11 +4,9 @@ permalink: /preke/
 ---
 <script> 
     
-    $(function() {
-        $('#keywords').bind('DOMSubtreeModified', function () {
-          console.log('changed');
-        });
-    }); 
+    $('#results').bind('DOMSubtreeModified', function () {
+        console.log('changed');
+    });
    
     function onSearch(sender){
       
