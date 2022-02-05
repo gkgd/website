@@ -20,7 +20,7 @@ permalink: /preke/
     });
     
     function contentChanged() { 
-        totalResults = document.getElementById('results').children;
+        totalResults = document.getElementById('results').children.length;
     }
     
     function onSearch(sender){
