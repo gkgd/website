@@ -22,7 +22,7 @@ permalink: /preke/
     function contentChanged() { 
         totalResults = document.getElementById('results').children.length;
         header = document.getElementById('resultsHeader');
-        if(header) header.innerHTML("Soekresultate(" + totalResults + ")");
+        if(header) header.innerHTML = "Soekresultate(" + totalResults + ")";
     }
     
     function onSearch(sender){
