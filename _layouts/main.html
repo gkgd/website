@@ -48,7 +48,12 @@
       resultsContainer: document.getElementById('results'),
       json: '../search.json', 
       templateMiddleware: function(prop, value, template) {
-        if (prop === 'bar') {
+        if (prop === 'tags') {
+          var tags = value.split(", ");
+          var tagElements = "";
+          for (let i = 0; i < tags.length; i++) {
+            tagElements += '<span class="badge badge-pill badge-primary">' + tags[i] + '</span>';
+          }
           return value.replace(/^\//, '')
         }
       },
