@@ -5,7 +5,8 @@ permalink: /preke/
 <script> 
     
     $(function(){
-     $("#keywords").value = " "; 
+     document.getElementById("keywords").value = " ";
+     onSearch();
     });
      
     function onSearch(sender){
