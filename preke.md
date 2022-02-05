@@ -39,7 +39,11 @@ permalink: /preke/
       var inpText = document.getElementById("keywords");
       var searchString = inpText.value;
       if(selBoek.value !== "blank"){
-        searchString += " " + selBoek.value
+        if(searchString === ""){
+            searchString += selBoek.value
+        }else{
+            searchString += " " + selBoek.value
+        }
       }
       search.search(searchString);
       var inputField = document.getElementById('keywords');
