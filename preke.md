@@ -4,9 +4,9 @@ permalink: /preke/
 ---
 <script>
     
-    window.DOMContentLoaded = function(event){
-      search.search(" ");
-    };
+    window.addEventListener('DOMContentLoaded', (event) => {
+        console.log('DOM fully loaded and parsed');
+    });
     
     function onSearch(sender){
       
