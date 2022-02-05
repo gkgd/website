@@ -141,6 +141,14 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
         <input type="text" id="keywords" name="keywords" placeholder="Soek vir sleatelwoorde hier..." oninput="onSearch()">
       </div>
     </div>
+    <div class="row">
+      <div class="col-25">
+        &nbsp;
+      </div>
+      <div class="col-75">
+        <input type="text" id="keywords" name="keywords" placeholder="Soek vir sleatelwoorde hier..." oninput="onSearch()">
+      </div>
+    </div>
   </form>
 </div>
 <br/>
