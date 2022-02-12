@@ -152,7 +152,8 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
         &nbsp;
       </div>
       <div class="col-75">
-        <button id="clear" type="button" class="btn btn-primary">Soek weer</button>
+        <button id="search" type="button" class="btn btn-primary">Soek weer</button>
+          <button id="clear" type="button" class="btn btn-outline-danger">kanselleer</button>
       </div>
     </div>
   </form>
