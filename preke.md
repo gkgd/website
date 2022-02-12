@@ -13,11 +13,7 @@ permalink: /preke/
         document.getElementById('boek').value = "blank";
         document.getElementById('keywords').focus();
         onSearch();
-     });
-    
-    document.getElementById("search").addEventListener("click", function(){ 
-        onSearch();
-     });
+     }); 
     
      var myElement = document.getElementById('results');
      if(window.addEventListener) {
@@ -155,9 +151,8 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
       <div class="col-25">
         &nbsp;
       </div>
-      <div class="col-75">
-        <button id="search" type="button" class="btn btn-primary">Soek</button>
-          <button id="clear" type="button" class="btn btn-outline-danger">kanselleer</button>
+      <div class="col-75"> 
+          <button id="clear" type="button" class="btn btn-outline-danger">Kanselleer</button>
       </div>
     </div>
   </form>
