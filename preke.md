@@ -9,8 +9,7 @@ permalink: /preke/
      document.getElementById("keywords").value = " "; 
      
      document.getElementById("clear").addEventListener("click", function(){
-        document.getElementById('keywords').value = " ";
-        document.getElementById('boek').value = "blank";
+        document.getElementById('keywords').value = " "; 
         document.getElementById('keywords').focus();
         onSearch();
      }); 
@@ -34,17 +33,9 @@ permalink: /preke/
     } 
     
     function onSearch(sender){
-      
-      var selBoek = document.getElementById("boek");
+       
       var inpText = document.getElementById("keywords");
-      var searchString = inpText.value;
-      if(selBoek.value !== "blank"){
-        if(searchString === "" || searchString === " "){
-            searchString = selBoek.value
-        }else{
-            searchString += " " + selBoek.value
-        }
-      }
+      var searchString = inpText.value; 
       search.search(searchString);
       var inputField = document.getElementById('keywords');
       if(inputField.value === "") inputField.value = " ";
