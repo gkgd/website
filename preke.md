@@ -88,7 +88,7 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
               <tr>
                 <td>
                     <label for="year" style="margin-bottom: 0px; padding-bottom: 6px;">Jaar:</label>
-                    <select name="year" id="year">
+                    <select name="year" id="year" onchange="onSearch()">
                         <option value="all">Alle Jare</option>
                         <option value="2023">2023</option>
                         <option value="2022">2022</option>
@@ -99,20 +99,20 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
                     </select></td>
                 <td style="padding-left: 16px;">
                     <label for="month" style="margin-bottom: 0px; padding-bottom: 6px;">Maand:</label>
-                    <select name="month" id="month">
+                    <select name="month" id="month" onchange="onSearch()">
                       <option value="all">Alle Maande</option>
-                      <option value="01">Januarie</option>
-                      <option value="02">Februarie</option>
-                      <option value="03">Maart</option>
-                      <option value="04">April</option>
-                      <option value="05">Mei</option>
-                      <option value="06">Junie</option>
-                      <option value="07">Julie</option>
-                      <option value="08">Augustus</option>
-                      <option value="09">September</option>
-                      <option value="10">Oktober</option>
-                      <option value="11">November</option>
-                      <option value="12">Desember</option>
+                      <option value="Jan">Januarie</option>
+                      <option value="Feb">Februarie</option>
+                      <option value="Mar">Maart</option>
+                      <option value="Apr">April</option>
+                      <option value="May">Mei</option>
+                      <option value="Jun">Junie</option>
+                      <option value="Jul">Julie</option>
+                      <option value="Aug">Augustus</option>
+                      <option value="Sep">September</option>
+                      <option value="Oct">Oktober</option>
+                      <option value="Nov">November</option>
+                      <option value="Dec">Desember</option>
                     </select>
                   </td>  
                 </tr> 
