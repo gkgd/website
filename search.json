@@ -11,7 +11,7 @@
       "content"  : "{{ post.content | strip_html | strip_newlines  }}",
       "youtube"  : "{{ post.youtube }}",
       "books"    : "{{ post.books | join: ', ' }}",
-      "year"     : "{{ post.date | date: '%y' }}",
+      "year"     : "{{ post.date | date: '%Y' }}",
       "month"     : "{{ post.date | date: '%b' }}"
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
