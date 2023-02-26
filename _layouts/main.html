@@ -46,13 +46,13 @@
       resultsContainer: document.getElementById('results'),
       json: '../search.json', 
       templateMiddleware: function(prop, value, template) {
-        if (prop === 'tags') {
-          var tags = value.split(", ");
-          var tagElements = "";
+        if (prop === 'books') {
+          var books = value.split(", ");
+          var bookElements = "";
           for (let i = 0; i < tags.length; i++) {
-            tagElements += '<span class="badge badge-pill badge-secondary" style="margin-right: 5px !important;">' + tags[i] + '</span>';
+            bookElements += '<span class="badge badge-pill badge-secondary" style="margin-right: 5px !important;">' + books[i] + '</span>';
           }
-          return tagElements;
+          return bookElements;
         }else if(prop === "youtube"){
           
           var style = "youtube-button";
@@ -77,7 +77,7 @@
         setTimeout(() => { this.search(" "); }, 500);
       },
       limit: 1000,
-      searchResultTemplate: '<div class="grid-item"> <div class="card"> <div class="card_container"><p style="font-size: 12px;margin-bottom: 2px;">{date}</p><b>{title}</b><p>{content}</p><table style="width: 100%;"><tbody><tr><td style="width: 75%;">{tags}</td><td style="text-align: right;">{youtube}</td></tr></tbody></table></div></div></div>'
+      searchResultTemplate: '<div class="grid-item"> <div class="card"> <div class="card_container"><p style="font-size: 12px;margin-bottom: 2px;">{date}</p><b>{title}</b><p>{content}</p><table style="width: 100%;"><tbody><tr><td style="width: 75%;">{books}</td><td style="text-align: right;">{youtube}</td></tr></tbody></table></div></div></div>'
     });  
   </script>
 </body>
