@@ -71,7 +71,8 @@
         return aDate < bDate;
       },
       noResultsText: "Geen preke is gevind nie",
-      success: function(){ 
+      success: function(){
+        setTimeout(() => { this.search(" "); }, 150);
       },
       fuzzy: false,
       limit: 1000,
