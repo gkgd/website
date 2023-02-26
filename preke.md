@@ -11,7 +11,7 @@ permalink: /preke/
      document.getElementById("clear").addEventListener("click", function(){
         document.getElementById('keywords').value = " ";
         document.getElementById('year').value = "all";
-        document.getElementById('month').value = "month";
+        document.getElementById('month').value = "all";
         document.getElementById('keywords').focus();
         onSearch();
      }); 
@@ -52,31 +52,13 @@ permalink: /preke/
     }
     
     function onSearch(sender){
-      
-      var selYear = document.getElementById("year");
-      var selMonth = document.getElementById("month");
+       
       var inpText = document.getElementById("keywords");
-      var searchString = inpText.value; 
-      
-      if(selYear.value !== "all"){
-        if(searchString === "" || searchString === " "){
-            searchString = selYear.value
-        }else{
-            searchString += " " + selYear.value
-        }
-      }
-    
-      if(selMonth.value !== "all"){
-        if(searchString === "" || searchString === " "){
-            searchString = selMonth.value
-        }else{
-            searchString += " " + selMonth.value
-        }
-      }
-    
+      var searchString = inpText.value;   
       search.search(searchString, applyFilter.bind(this));
       var inputField = document.getElementById('keywords');
       if(inputField.value === "") inputField.value = " ";
+    
     };
     
 </script>  
