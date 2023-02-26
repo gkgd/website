@@ -34,6 +34,23 @@ permalink: /preke/
         if(header) header.innerHTML = "Soekresultate(" + totalResults + ")";
     } 
     
+    function applyFilter(element){
+        
+        var filterYear = false;
+        var filterMonth = false;
+    
+        var year = document.getElementById('year').value
+        if(year !== undefined || year !== "all") filterYear = true;
+ 
+        var month = document.getElementById('month').value
+        if(month !== undefined || month !== "all") filterMonth = true;
+    
+        if(filterYear && !filterMonth) return element.year === document.getElementById('year').value;
+        else if(!filterYear && filterMonth) return element.month === document.getElementById('month').value 
+        else if(filterYear && filterMonth) return element.year === document.getElementById('year').value && element.month === document.getElementById('month').value
+        else return true;
+    }
+    
     function onSearch(sender){
       
       var selYear = document.getElementById("year");
@@ -57,7 +74,7 @@ permalink: /preke/
         }
       }
     
-      search.search(searchString);
+      search.search(searchString, applyFilter.bind(this));
       var inputField = document.getElementById('keywords');
       if(inputField.value === "") inputField.value = " ";
     };
