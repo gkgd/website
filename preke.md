@@ -40,10 +40,10 @@ permalink: /preke/
         var filterMonth = false;
     
         var year = document.getElementById('year').value
-        if(year !== undefined || year !== "all") filterYear = true;
+        if(year !== undefined && year !== "all") filterYear = true;
  
         var month = document.getElementById('month').value
-        if(month !== undefined || month !== "all") filterMonth = true;
+        if(month !== undefined && month !== "all") filterMonth = true;
     
         if(filterYear && !filterMonth) return element.year === document.getElementById('year').value;
         else if(!filterYear && filterMonth) return element.month === document.getElementById('month').value 
