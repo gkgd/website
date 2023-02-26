@@ -10,7 +10,9 @@
       "date"     : "{{ post.date | date: '%d %b %y' }}",
       "content"  : "{{ post.content | strip_html | strip_newlines  }}",
       "youtube"  : "{{ post.youtube }}",
-      "books"    : "{{ post.books | join: ', ' }}"
+      "books"    : "{{ post.books | join: ', ' }}",
+      "year"     : "{{ post.date | date: '%y' }}",
+      "month"     : "{{ post.date | date: '%b' }}"
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
