@@ -422,7 +422,7 @@ var _$src_8 = {};
     }
     for (let i = 0; i < len; i++) {
       resultList[i].query = query
-      appendToResultsContainer(_$Templater_7.compile(results[i]))
+      appendToResultsContainer(_$Templater_7.compile(resultList[i]))
     }
   }
 
