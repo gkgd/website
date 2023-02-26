@@ -65,17 +65,13 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
   <form action="#">
     <div class="row">
       <div class="col">
-        <label for="keywords">Skrifgedeeltes en Sleutelwoorde</label>
-      </div> 
-    </div>
-    <div class="row"> 
-      <div class="col">
+        <label for="keywords" style="margin-bottom: 0px; padding-bottom: 6px;">Skrifgedeeltes en Sleutelwoorde:</label>
         <input type="text" id="keywords" name="keywords" placeholder="Soek vir sleatelwoorde hier..." oninput="onSearch()">
-      </div>
-    </div>
+      </div> 
+    </div> 
     <div class="row"> 
       <div class="col"> 
-          <button id="clear" type="button" class="btn btn-outline-danger">Kanselleer</button>
+          <button id="clear" type="button" class="btn btn-outline-danger" style="margin-top: 16px;">Kanselleer</button>
       </div>
     </div>
   </form>
