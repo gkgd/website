@@ -59,6 +59,38 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
         <label for="keywords" style="margin-bottom: 0px; padding-bottom: 6px;">Skrifgedeeltes en Sleutelwoorde:</label>
         <input type="text" id="keywords" name="keywords" placeholder="Soek vir sleatelwoorde hier..." oninput="onSearch()">
       </div> 
+    </div>
+    <div class="row">
+      <div class="col-50">
+        <label for="year" style="margin-bottom: 0px; padding-bottom: 6px;">Jaar:</label>
+        <select name="year" id="year">
+          <option value="all">Alle Jare</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+        </select>
+      </div>
+      <div class="col-50">
+        <label for="month" style="margin-bottom: 0px; padding-bottom: 6px;">Skrifgedeeltes en Sleutelwoorde:</label>
+        <select name="month" id="month">
+          <option value="all">Alle Maande</option>
+          <option value="01">Januarie</option>
+          <option value="02">Februarie</option>
+          <option value="03">Maart</option>
+          <option value="04">April</option>
+          <option value="05">Mei</option>
+          <option value="06">Junie</option>
+          <option value="07">Julie</option>
+          <option value="08">Augustus</option>
+          <option value="09">September</option>
+          <option value="10">Oktober</option>
+          <option value="11">November</option>
+          <option value="12">Desember</option>
+        </select>
+      </div> 
     </div> 
     <div class="row"> 
       <div class="col"> 
