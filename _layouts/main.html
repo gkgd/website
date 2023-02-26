@@ -77,7 +77,7 @@
         setTimeout(() => { this.search(" "); }, 500);
       },
       limit: 1000,
-      searchResultTemplate: '<div class="grid-item"> <div class="card"> <div class="card_container"><h6>{date}  {tags}</h6><b>{title}</b> <p>{content}</p>{youtube}</div></div></div>'
+      searchResultTemplate: '<div class="grid-item"> <div class="card"> <div class="card_container"><p style="font-size: 12px;margin-bottom: 2px;">{date}</p><b>{title}</b><p>{content}</p><table style="width: 100%;"><tbody><tr><td style="width: 75%;">{tags}</td><td style="text-align: right;">{youtube}</td></tr></tbody></table></div></div></div>'
     });  
   </script>
 </body>
