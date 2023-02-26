@@ -400,6 +400,9 @@ var _$src_8 = {};
   }
 
   function search (query, filter) {
+    
+   if(filter === null || filter === "" || filter === " ") filter = undefined;
+   
     if (isValidQuery(query)) {
       emptyResultsContainer()
       render(_$Repository_4.search(query), query, filter)
@@ -409,7 +412,7 @@ var _$src_8 = {};
   function render (results, filter) {
     
     var resultList = results;
-    if(filter){
+    if(filter !== undefined){
       resultList = resultList.filter(filter);
     }
     
