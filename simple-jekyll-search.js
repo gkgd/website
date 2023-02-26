@@ -409,7 +409,7 @@ var _$src_8 = {};
     }
   }
 
-  function render (results, filter) {
+  function render (results, query, filter) {
     
     var resultList = results;
     if(filter !== undefined){
