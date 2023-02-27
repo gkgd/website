@@ -34,7 +34,7 @@ permalink: /preke/
         if(header) header.innerHTML = "Soekresultate(" + totalResults + ")";
     } 
     
-    function applyFilter(element){
+<!--     function applyFilter(element){
         
         if(element.date && element.date !== "" && element.date !== " "){
         
@@ -60,7 +60,7 @@ permalink: /preke/
             return true;
         }
         
-    }
+    } -->
     
     function onSearch(sender){
        
