@@ -38,6 +38,34 @@
   <!-- Configuration -->
   <script> 
     
+    const applyFilter = function(element){
+        
+        if(element.date && element.date !== "" && element.date !== " "){
+        
+            var dateParts = element.date.split("-");
+            var year = dateParts[0];
+            var month = dateParts[1];
+    
+            var filterYear = false;
+            var filterMonth = false;
+
+            var selectedYear = document.getElementById('year').value
+            if(selectedYear !== undefined && selectedYear !== "all") filterYear = true;
+
+            var selectedMonth = document.getElementById('month').value
+            if(selectedMonth !== undefined && selectedMonth !== "all") filterMonth = true;
+
+            if(filterYear && !filterMonth) return year === selectedYear;
+            else if(!filterYear && filterMonth) return month === selectedMonth 
+            else if(filterYear && filterMonth) return year === selectedYear && month === selectedMonth
+            else return true;
+    
+        }else{
+            return true;
+        }
+        
+    }
+    
     var totalResults = 0;
     
     var search = SimpleJekyllSearch({
