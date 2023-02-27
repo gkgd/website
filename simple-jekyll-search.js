@@ -407,7 +407,7 @@ var _$src_8 = {};
   
     if (isValidQuery(query)) {
       emptyResultsContainer()
-      render(_$Repository_4.search(query), query, filter)
+      render(_$Repository_4.search(query), query)
     }
   }
 
