@@ -90,8 +90,27 @@
           }
           return '<a type="button" class="btn btn-primary ' + style + '" href="' + link + '" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-video-fill" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z"></path></svg>&nbsp;&nbsp;Kyk Nou</a>'
         }else if(prop === "date"){
-          totalResults += 1;
-          console.log(totalResults);
+          
+          var parts = value.split("-");
+          var year = parts[0];
+          var month = parts[1];
+          var day = parseInt(parts[2]) + "";
+          
+          if(month === "01") month = "Januarie"; 
+          else if (month === "02") month = "Februarie";
+          else if (month === "03") month = "Maart";
+          else if (month === "04") month = "April";
+          else if (month === "05") month = "Mei";
+          else if (month === "06") month = "Junie";
+          else if (month === "07") month = "Julie";
+          else if (month === "08") month = "Augustus";
+          else if (month === "09") month = "September";
+          else if (month === "10") month = "Oktober";
+          else if (month === "11") month = "November";
+          else if (month === "12") month = "Desember";
+          else month = "";
+          
+          return day + " " + month + " " + year;
         }
       },
       sortMiddleware: function(a, b) {
