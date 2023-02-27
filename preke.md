@@ -36,6 +36,8 @@ permalink: /preke/
     
     function applyFilter(element){
         
+        var dateParts = element.date.split("-");
+
         var filterYear = false;
         var filterMonth = false;
     
