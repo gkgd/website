@@ -36,21 +36,30 @@ permalink: /preke/
     
     function applyFilter(element){
         
-        var dateParts = element.date.split("-");
+        if(element.date && element.date !== "" && element.date !== " "){
+        
+            var dateParts = element.date.split("-");
+            var year = dateParts[0];
+            var month = dateParts[1];
+    
+            var filterYear = false;
+            var filterMonth = false;
 
-        var filterYear = false;
-        var filterMonth = false;
+            var year = document.getElementById('year').value
+            if(year !== undefined && year !== "all") filterYear = true;
+
+            var month = document.getElementById('month').value
+            if(month !== undefined && month !== "all") filterMonth = true;
+
+            if(filterYear && !filterMonth) return year === document.getElementById('year').value;
+            else if(!filterYear && filterMonth) return month === document.getElementById('month').value 
+            else if(filterYear && filterMonth) return year === document.getElementById('year').value && month === document.getElementById('month').value
+            else return true;
     
-        var year = document.getElementById('year').value
-        if(year !== undefined && year !== "all") filterYear = true;
- 
-        var month = document.getElementById('month').value
-        if(month !== undefined && month !== "all") filterMonth = true;
-    
-        if(filterYear && !filterMonth) return element.year === document.getElementById('year').value;
-        else if(!filterYear && filterMonth) return element.month === document.getElementById('month').value 
-        else if(filterYear && filterMonth) return element.year === document.getElementById('year').value && element.month === document.getElementById('month').value
-        else return true;
+        }else{
+            return true;
+        }
+        
     }
     
     function onSearch(sender){
