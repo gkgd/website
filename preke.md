@@ -45,15 +45,15 @@ permalink: /preke/
             var filterYear = false;
             var filterMonth = false;
 
-            var year = document.getElementById('year').value
-            if(year !== undefined && year !== "all") filterYear = true;
+            var selectedYear = document.getElementById('year').value
+            if(selectedYear !== undefined && selectedYear !== "all") filterYear = true;
 
-            var month = document.getElementById('month').value
-            if(month !== undefined && month !== "all") filterMonth = true;
+            var selectedMonth = document.getElementById('month').value
+            if(selectedMonth !== undefined && selectedMonth !== "all") filterMonth = true;
 
-            if(filterYear && !filterMonth) return year === document.getElementById('year').value;
-            else if(!filterYear && filterMonth) return month === document.getElementById('month').value 
-            else if(filterYear && filterMonth) return year === document.getElementById('year').value && month === document.getElementById('month').value
+            if(filterYear && !filterMonth) return year === selectedYear;
+            else if(!filterYear && filterMonth) return month === selectedMonth 
+            else if(filterYear && filterMonth) return year === selectedYear && month === selectedMonth
             else return true;
     
         }else{
