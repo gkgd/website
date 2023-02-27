@@ -99,9 +99,10 @@
         var bDate = new Date(b.date);
         return aDate < bDate;
       },
+      filterMiddleware: applyFilter.bind(this),
       noResultsText: "Geen preke is gevind nie",
       success: function(){
-        setTimeout(() => { this.search(" ", applyFilter.bind(this)); }, 150);
+        setTimeout(() => { this.search(" "); }, 150);
       },
       fuzzy: false,
       limit: 1000,
