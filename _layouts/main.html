@@ -101,7 +101,7 @@
       },
       noResultsText: "Geen preke is gevind nie",
       success: function(){
-        setTimeout(() => { this.search(" "); }, 150);
+        setTimeout(() => { this.search(" ", applyFilter.bind(this)); }, 150);
       },
       fuzzy: false,
       limit: 1000,
