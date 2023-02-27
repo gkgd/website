@@ -89,12 +89,12 @@ Hier kan jy soek na spesifieke preke gebaseer op die text gedeelte en ander sleu
                     <label for="year" style="margin-bottom: 0px; padding-bottom: 6px;">Jaar:</label>
                     <select name="year" id="year" onchange="onSearch()">
                         <option value="all">Alle Jare</option>
-                        <option value="23">2023</option>
-                        <option value="22">2022</option>
-                        <option value="21">2021</option>
-                        <option value="20">2020</option>
-                        <option value="19">2019</option>
-                        <option value="18">2018</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
                     </select></td>
                 <td style="padding-left: 16px;">
                     <label for="month" style="margin-bottom: 0px; padding-bottom: 6px;">Maand:</label>
