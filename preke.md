@@ -32,35 +32,7 @@ permalink: /preke/
         totalResults = document.getElementById('results').children.length;
         header = document.getElementById('resultsHeader');
         if(header) header.innerHTML = "Soekresultate(" + totalResults + ")";
-    } 
-    
-<!--     function applyFilter(element){
-        
-        if(element.date && element.date !== "" && element.date !== " "){
-        
-            var dateParts = element.date.split("-");
-            var year = dateParts[0];
-            var month = dateParts[1];
-    
-            var filterYear = false;
-            var filterMonth = false;
-
-            var selectedYear = document.getElementById('year').value
-            if(selectedYear !== undefined && selectedYear !== "all") filterYear = true;
-
-            var selectedMonth = document.getElementById('month').value
-            if(selectedMonth !== undefined && selectedMonth !== "all") filterMonth = true;
-
-            if(filterYear && !filterMonth) return year === selectedYear;
-            else if(!filterYear && filterMonth) return month === selectedMonth 
-            else if(filterYear && filterMonth) return year === selectedYear && month === selectedMonth
-            else return true;
-    
-        }else{
-            return true;
-        }
-        
-    } -->
+    }  
     
     function onSearch(sender){
        
