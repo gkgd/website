@@ -301,11 +301,14 @@ var _$src_8 = {};
     searchInput: null,
     resultsContainer: null,
     json: [],
-    success: Function.prototype,
+    success: Function.prototype, 
     searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
     templateMiddleware: Function.prototype,
     sortMiddleware: function () {
       return 0
+    },
+    filterMiddleware: function () {
+      return true;
     },
     noResultsText: 'No results found',
     limit: 10,
@@ -364,7 +367,8 @@ var _$src_8 = {};
       search: search
     }
 
-    typeof options.success === 'function' && options.success.call(rv)
+    typeof options.success === 'function' && options.success.call(rv) 
+    
     return rv
   }
 
@@ -399,22 +403,18 @@ var _$src_8 = {};
     })
   }
 
-  function search (query, filter) {
-    
-   if(filter === null || filter === "" || filter === " ") filter = undefined;
-   
+  function search (query) {
+  
     if (isValidQuery(query)) {
       emptyResultsContainer()
       render(_$Repository_4.search(query), query, filter)
     }
   }
 
-  function render (results, query, filter) {
+  function render (results, query) {
     
-    var resultList = results;
-    if(filter !== undefined){
-      resultList = resultList.filter(filter);
-    }
+    var resultList = results; 
+    resultList = resultList.filter(options.filterMiddleware); 
     
     const len = resultList.length
     if (len === 0) {
